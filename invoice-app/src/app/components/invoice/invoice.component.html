@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="card my-3">
+    <div class="card-header">
+      <h2>Ejemplo de Factura</h2>
+    </div>
+    <div class="card-body">
+      <app-invoice-view [id]="invoice.id" [name]="invoice.name" />
+      <div class="row my-3">
+        <div class="col">
+          <app-client-view [client]="invoice.client" />
+        </div>
+        <div class="col">
+          <app-company-view [company]="invoice.company" />
+        </div>
+      </div>
+
+        <app-list-items (removeEventEmitter)="onRemove($event)" [products]="invoice.items" />
+        <app-total-view [total]="invoice.total" />
+        <app-form-item (addProductEventEmitter)="addProduct($event)"/>
+    </div>
+
+  </div>
+</div>
