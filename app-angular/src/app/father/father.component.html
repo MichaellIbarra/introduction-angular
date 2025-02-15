@@ -1,0 +1,5 @@
+<p>Component Father</p>
+<p>From child: {{childTitle }}</p>
+<app-child (subTitleEmmit)="updateChildTitle($event)" title="{{subtitle}}" />
+<app-child title="Other" />
+<app-child title="{{subtitle}}" />

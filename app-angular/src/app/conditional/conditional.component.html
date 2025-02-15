@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-center text-center">
+    <div class="w-50">
+        <h2>Status Authentication</h2>
+        @if (isAuthentication) {
+        <p class="text-danger">No estás Authenticado</p>
+        } @else {
+        <p class="text-success">Estás Authenticado</p>
+        }
+        <button class="btn btn-primary mt-3" (click)="alternateAuthentication()">Alternar estado de authenticado</button>
+    </div>
+</div>

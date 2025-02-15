@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-center text-center">
+    <div class="w-50">
+        <h2>List Task</h2>
+
+        <ul class="list-group w-50 mx-auto">
+            @for (item of task; track $index) {
+                <li class="list-group-item text-center">{{ item }}</li>
+            }
+        </ul>
+
+        <div class="mt-3 d-flex justify-content-center">
+            <input type="text" #inputTask class="form-control mb-3 w-50" placeholder="Task" />
+        </div>
+        
+        <div class="mt-3 d-flex justify-content-center">
+            <button class="btn btn-primary" (click)="addTask(inputTask.value); inputTask.value =''">Add Task</button>
+        </div>
+     
+    </div>
+</div>

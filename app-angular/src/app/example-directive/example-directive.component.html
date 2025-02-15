@@ -1,0 +1,75 @@
+<div class="container text-center">
+    <button (click)="setVisibility()">
+        {{ isVisibility ? 'Ocultar' : 'Mostrar' }}
+    </button>
+
+    @if (isVisibility) {
+    <h2>{{title}}</h2>
+
+    @if (users.length > 0) {
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (user of users; track $index) {
+            <tr>
+                <td>{{$index +1}}</td>
+                <td>{{ user }}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    }@else {
+    <h2>Not Users</h2>
+
+    }
+
+    }@else {
+    <h2>Not Enabled</h2>
+
+    }
+
+
+
+
+
+
+    <!-- <div *ngIf="isVisibility; else notEnabled">
+        <h2>{{title}}</h2>
+    </div>
+
+    <button (click)="setVisibility()">
+        {{ isVisibility ? 'Ocultar' : 'Mostrar' }}
+    </button>
+
+    <div *ngIf="isVisibility">
+
+        <table *ngIf="users.length > 0; else notUser" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users; index as i">
+                    <td>{{i +1}}</td>
+                    <td>{{ user }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ng-template #notUser>
+            <h2>Not Users</h2>
+        </ng-template>
+
+    </div>
+
+    <ng-template #notEnabled>
+        <h2>Not Enabled</h2>
+    </ng-template> -->
+</div>

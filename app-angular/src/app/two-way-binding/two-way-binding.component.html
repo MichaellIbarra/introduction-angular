@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center">
+    <div class="w-50">
+        <div class="mb-3">
+            <label for="inputText" class="mx-2">Message: </label>
+            <input type="text" id="inputText" [(ngModel)]="greet" autocomplete="off" />
+        </div>
+
+        <div class="mb-3">
+            <div class="alert alert-success mt-4 mx-auto w-50">
+                {{ greet }}
+            </div>
+        </div>
+    </div>
+
+</div>
