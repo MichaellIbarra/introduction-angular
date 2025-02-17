@@ -15,6 +15,6 @@
 
 ### Name Project Cart-App
 <p align="center">
-<img alt="Example of an invoice system." width="80%" src="./assets/app-invoice.png"><br>
-<em>Example of an invoice system.</em>
+<img alt="Example of an invoice system." width="80%" src="./assets/app-cart.png"><br>
+<em>Example of an Cart system.</em>
 </p>
