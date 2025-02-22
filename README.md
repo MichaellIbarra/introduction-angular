@@ -18,3 +18,10 @@
 <img alt="Example of an invoice system." width="80%" src="./assets/app-cart.png"><br>
 <em>Example of an Cart system.</em>
 </p>
+
+
+### Name Project Cart-App Redux Integration with Angular
+<p align="center">
+<img alt="Example of an invoice system." width="80%" src="./assets/app-cart-redux.png"><br>
+<em>Example of an Cart Redux system.</em>
+</p>
