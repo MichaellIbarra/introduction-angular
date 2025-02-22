@@ -1,0 +1,32 @@
+<app-navbar  [items]="items" />
+
+<div class="container my-4">
+  <!-- <h2>Carro de Compras</h2> -->
+
+  <!-- <div class="row">
+
+    <div [className]="isShowCart ? 'col-8' : 'col-12' ">
+      <app-catalog [products]="products" (productEventEmitter)="onAddCart($event)" />
+    </div>
+
+    @if (isShowCart) {
+      <div class="col-4">
+        <button class="btn btn-danger" (click)="openCart()">X</button>
+        @if (items.length > 0) {
+        <app-cart [total]="total" [items]="items" (idProductEventEmitter)="onDeleteCart($event)" />
+        } @else {
+        <div class="alert alert-warning my-2">No hay productos en el carro de compras</div>
+        }
+      </div>
+      }
+  </div> -->
+
+  <!-- <app-catalog [products]="products" (productEventEmitter)="onAddCart($event)" /> -->
+
+  <!-- @if (isShowCart) {
+  <app-card-modal [items]="items"
+   
+    (idProductEventEmitter)="onDeleteCart($event)" (openEventEmitter)="openCart()" />
+  } -->
+  <router-outlet/>
+</div>
