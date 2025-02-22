@@ -1,5 +1,5 @@
 # Introduccion in Angular 18v
-- What is Angular? : Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.
+What is Angular? : Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.
 
 ### Name Project Cart-App Redux Integration with Angular
 <p align="center">
