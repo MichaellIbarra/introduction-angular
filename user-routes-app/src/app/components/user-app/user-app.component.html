@@ -1,0 +1,27 @@
+<div class="container my-4">
+    <h3>
+        {{title}}
+    </h3>
+
+    <button type="button" class="btn btn-primary" (click)="setOpen()">{{ open == true ? 'Ocultar':'Mostrar'}}</button>
+    <div class="row">
+        @if (open) {
+        <!-- <div class="col"> -->
+        <!-- <app-user-form [user]="userSelect" (newUserEventEmitter)="addUser($event)"/> -->
+        <!-- </div> -->
+        }
+        <div class="col">
+            <app-user [users]="users" (selectedIdUserEventEmitter)="setSelectUser($event)"
+                (idUserEventEmitter)="removeUser($event)"></app-user>
+        </div>
+
+
+    </div>
+    @if (open) {
+        <div class="abrir-modal animacion fadeIn">
+            <app-user-form [user]="userSelect" (newUserEventEmitter)="addUser($event)" (openEventEmitter)="setOpen()" />
+        </div>
+    }
+
+
+</div>
